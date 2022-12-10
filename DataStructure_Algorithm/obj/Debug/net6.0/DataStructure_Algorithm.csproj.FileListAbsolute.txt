@@ -1,0 +1,15 @@
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\bin\Debug\net6.0\DataStructure_Algorithm.exe
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\bin\Debug\net6.0\DataStructure_Algorithm.deps.json
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\bin\Debug\net6.0\DataStructure_Algorithm.runtimeconfig.json
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\bin\Debug\net6.0\DataStructure_Algorithm.dll
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\bin\Debug\net6.0\DataStructure_Algorithm.pdb
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\obj\Debug\net6.0\DataStructure_Algorithm.csproj.AssemblyReference.cache
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\obj\Debug\net6.0\DataStructure_Algorithm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\obj\Debug\net6.0\DataStructure_Algorithm.AssemblyInfoInputs.cache
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\obj\Debug\net6.0\DataStructure_Algorithm.AssemblyInfo.cs
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\obj\Debug\net6.0\DataStructure_Algorithm.csproj.CoreCompileInputs.cache
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\obj\Debug\net6.0\DataStructure_Algorithm.dll
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\obj\Debug\net6.0\refint\DataStructure_Algorithm.dll
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\obj\Debug\net6.0\DataStructure_Algorithm.pdb
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\obj\Debug\net6.0\DataStructure_Algorithm.genruntimeconfig.cache
+C:\Users\Sartaj khan\source\repos\DataStructure_Algorithm\DataStructure_Algorithm\obj\Debug\net6.0\ref\DataStructure_Algorithm.dll
