@@ -13,7 +13,7 @@ namespace DataStructure_Algorithmls
                 Console.WriteLine("Welcome To Datastructures and Algorithms");
                 Console.WriteLine("1.Permutation Using Recursion\n2.BinarySearch\n3.InsertionSort\n4.BubbleSort" +
                     "\n5.MergeSort\n6.Anagrams\n7.PrimeNumber\n8.AnagramAndPalindromes\n9.SearchingAndSortingUsingGenerics" +
-                    "\n10.FindNumber");
+                    "\n10.FindNumber\n11.TaskDoneByMaximumAmount");
                 Console.WriteLine("Enter Your Option");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch (num)
@@ -57,6 +57,11 @@ namespace DataStructure_Algorithmls
                     case 10:
                         FindNumber findnumber = new FindNumber();
                         findnumber.Find();
+                        findnumber.Question(12, 23);
+                        break;
+                    case 11:
+                        TaskDoneByMaximumAmount taskdonebymaximumamount = new TaskDoneByMaximumAmount();
+                        taskdonebymaximumamount.tasks();
                         break;
                     default:
                         Console.WriteLine("-------Enter the valid option---");
