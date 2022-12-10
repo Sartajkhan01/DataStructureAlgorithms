@@ -6,40 +6,81 @@ using System.Threading.Tasks;
 
 namespace DataStructure_Algorithm
 {
-    class PermutationsOfString
+    class BinarySearchProb
     {
-        // Using HashSet collection for storing permutations of string uniquely.
-        HashSet<string> set = new HashSet<string>();
-        public void permutations()
+        public void binarySearch()
         {
-            Console.Write("Enter a string:  ");
-            string str = Console.ReadLine();
+            // Input text file path
+            string file = @"C:\Users\4shiv\OneDrive\Desktop\Fellowship\Assignments\Assignment_Day_16_17\Day_16_17_DS_Algorithms\Algorithms\Binarysearch.txt";
 
-            string result = "";
-            permute(str, result);
+            // Reading comma-separated values from input file 
+            string str = File.ReadAllText(file);
 
-            Console.Write("\nPermutations of string {0} are: \n", str);
-            foreach (var s in set)
+            // Converting string into array of strings
+            String[] strArray = str.Split(',');
+
+            // Using bubble sorting algorithm for sorting string array elements
+            BubbleSort(strArray);
+
+
+            // Printing sorted string array elements
+            for (int i = 0; i < strArray.Length; i++)
             {
-                Console.WriteLine(s);
+                Console.WriteLine("{0}. {1}", i + 1, strArray[i]);
             }
+
+
+            // Taking input string value to be searched
+            Console.Write("\n\nEnter text to be searched:  ");
+            string word = Console.ReadLine();
+
+            int left = 0;
+            int right = strArray.Length - 1;
+
+            // Using Binary Search 
+            int result = BinarySearch(strArray, left, right, word);
+
+            Console.WriteLine((result == -1) ? "\nElement not found" : "\nElement found at position " + (result + 1));
+
         }
 
-        void permute(string str, string result)
+        public static int BinarySearch(string[] strArray, int left, int right, string word)
         {
+            if (right >= left)
+            {
 
-            if (str.Length == 0)
-            {
-                set.Add(result);
-                return;
+                int mid = left + (right - left) / 2;
+
+                if (strArray[mid] == word)
+                {
+                    return mid;
+                }
+                else if (word.CompareTo(strArray[mid]) < 0)
+                {
+                    return BinarySearch(strArray, left, mid - 1, word);        // left sub array
+                }
+                else
+                {
+                    return BinarySearch(strArray, mid + 1, right, word);      // right sub array
+                }
             }
-            for (int i = 0; i < str.Length; i++)
+
+            return -1;
+        }
+
+        void BubbleSort(string[] arr)
+        {
+            for (int i = 0; i < arr.Length - 1; i++)
             {
-                char ch = str[i];
-                String left_substr = str.Substring(0, i);
-                String right_substr = str.Substring(i + 1);
-                String rest = left_substr + right_substr;
-                permute(rest, result + ch);
+                for (int j = 0; j < arr.Length - i - 1; j++)
+                {
+                    if (arr[j].CompareTo(arr[j + 1]) > 0)
+                    {
+                        string temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
             }
         }
     }
