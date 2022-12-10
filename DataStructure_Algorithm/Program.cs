@@ -11,7 +11,7 @@ namespace DataStructure_Algorithmls
             while (flag == "Y" || flag == "y")
             {
                 Console.WriteLine("Welcome To Datastructures and Algorithms");
-                Console.WriteLine("1.Permutation Using Recursion\n2.BinarySearch");
+                Console.WriteLine("1.Permutation Using Recursion\n2.BinarySearch\n3.InsertionSort");
                 Console.WriteLine("Enter Your Option");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch (num)
@@ -23,6 +23,10 @@ namespace DataStructure_Algorithmls
                     case 2:
                         BinarySearchProb binarysearchprob = new BinarySearchProb();
                         binarysearchprob.binarySearch();
+                        break;
+                    case 3:
+                        InsertionSort insertionsort = new InsertionSort();
+                        insertionsort.insertionSort();
                         break;
                     default:
                         Console.WriteLine("-------Enter the valid option---");
